@@ -2,6 +2,7 @@
 ### AI-Based Disease Symptom Checker using Machine Learning & NLP
 
 ---
+<br>
 
 ## 📌 Project Overview
 
@@ -11,6 +12,7 @@ The system leverages **Natural Language Processing (NLP)** techniques and superv
 This project is developed **strictly for educational and health-awareness purposes** and **does not replace professional medical diagnosis or treatment**.
 
 ---
+<br>
 
 ## 🎯 Problem Statement
 
@@ -22,6 +24,7 @@ The objective of this project is to demonstrate how **Machine Learning and NLP**
 - Encourages informed and responsible decision-making
 
 ---
+<br>
 
 ## 🧠 Solution Approach
 
@@ -37,6 +40,7 @@ The system follows a structured and end-to-end Machine Learning pipeline:
    - Ethical and medical disclaimer
 
 ---
+<br>
 
 ## 🛠️ Technologies Used
 
@@ -49,6 +53,7 @@ The system follows a structured and end-to-end Machine Learning pipeline:
 - **Version Control:** Git & GitHub  
 
 ---
+<br>
 
 ## 📂 Project Structure
 
@@ -71,6 +76,7 @@ DonDew_HealthSense/
 └── README.md
 ```
 ---
+<br>
 
 
 
@@ -94,6 +100,7 @@ DonDew_HealthSense/
 - Symptom synonym handling to improve robustness and real-world accuracy  
 
 ---
+<br>
 
 ## 🌐 Web Application
 
@@ -107,6 +114,7 @@ The project includes a clean, lightweight, and user-friendly **Streamlit-based w
 This interface demonstrates how Machine Learning models can be effectively **integrated into real-world applications** for practical use and awareness.
 
 ---
+<br>
 
 ## ⚠️ Disclaimer
 
@@ -116,6 +124,7 @@ It **does not provide medical diagnosis or treatment recommendations**.
 Users are strongly advised to consult a **qualified healthcare professional** for any medical concerns or decisions.
 
 ---
+<br>
 
 ## 🚀 How to Run the Project
 
