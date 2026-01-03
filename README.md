@@ -1,121 +1,125 @@
-🩺 DonDew HealthSense
-AI-Based Disease Symptom Checker using Machine Learning & NLP
-📌 Project Overview
+# 🩺 DonDew HealthSense  
+### AI-Based Disease Symptom Checker using Machine Learning & NLP
 
-DonDew HealthSense is a software-only Machine Learning project that predicts possible diseases based on user-described symptoms written in natural English.
-The system uses Natural Language Processing (NLP) techniques and classification models to analyze symptom text and suggest a likely condition with a confidence score.
+---
 
-This project is developed for educational and health-awareness purposes only and does not replace professional medical diagnosis.
+## 📌 Project Overview
 
-🎯 Problem Statement
+**DonDew HealthSense** is a software-only Machine Learning application designed to predict potential diseases based on symptoms described by users in natural English.  
+The system leverages **Natural Language Processing (NLP)** techniques and supervised **Machine Learning classification models** to analyze free-text symptom inputs and return a probable medical condition along with a confidence score.
 
-Many people struggle to understand what their symptoms might indicate, especially when access to immediate medical guidance is limited.
-This project aims to demonstrate how Machine Learning and NLP can be used to build an early symptom-based awareness system that supports informed decision-making.
+This project is developed **strictly for educational and health-awareness purposes** and **does not replace professional medical diagnosis or treatment**.
 
-🧠 Solution Approach
+---
 
-The system follows a complete ML pipeline:
+## 🎯 Problem Statement
 
-User enters symptoms in natural English
+In many real-world scenarios, individuals experience symptoms but lack immediate access to reliable medical guidance. This often leads to confusion, misinformation, or delayed action.
 
-Text is cleaned and normalized
+The objective of this project is to demonstrate how **Machine Learning and NLP** can be applied to create an **early-stage symptom awareness system** that:
+- Interprets unstructured symptom descriptions
+- Provides preliminary insights
+- Encourages informed and responsible decision-making
 
-Symptoms are converted into numerical features using TF-IDF
+---
 
-A trained ML model predicts the most likely disease
+## 🧠 Solution Approach
 
-The system displays:
+The system follows a structured and end-to-end Machine Learning pipeline:
 
-Predicted condition
+1. Users enter symptoms in **natural English language**
+2. Input text is **cleaned, normalized, and preprocessed**
+3. Symptoms are transformed into numerical features using **TF-IDF vectorization**
+4. A trained **Machine Learning classification model** predicts the most likely disease
+5. The system outputs:
+   - Predicted condition
+   - Confidence score
+   - Ethical and medical disclaimer
 
-Confidence score
+---
 
-Ethical disclaimer
+## 🛠️ Technologies Used
 
-🛠️ Technologies Used
+- **Programming Language:** Python  
+- **Machine Learning:** Scikit-learn  
+- **Data Handling:** Pandas, NumPy  
+- **Feature Extraction:** TF-IDF Vectorization  
+- **Model:** Logistic Regression (Class-balanced)  
+- **Web Interface:** Streamlit  
+- **Version Control:** Git & GitHub  
 
-Python
+---
 
-Scikit-learn
+## 📂 Project Structure
 
-Pandas & NumPy
-
-TF-IDF Vectorization
-
-Logistic Regression
-
-Streamlit (Web Interface)
-
-Git & GitHub
-
-📂 Project Structure
+```text
 DonDew_HealthSense/
 │
 ├── app/
-│   └── app.py                 # Streamlit web application
+│   └── app.py                  # Streamlit web application
 │
 ├── model/
-│   ├── disease_model.pkl      # Trained ML model
-│   └── tfidf_vectorizer.pkl   # Text vectorizer
+│   ├── disease_model.pkl       # Trained ML classification model
+│   └── tfidf_vectorizer.pkl    # TF-IDF vectorizer
 │
 ├── notebooks/
-│   └── model_training.ipynb   # Model training notebook
+│   └── model_training.ipynb    # Model training and evaluation
 │
 ├── data/
-│   └── disease_symptoms.csv   # Dataset
+│   └── disease_symptoms.csv    # Dataset used for training
 │
 └── README.md
 
-🧪 Machine Learning Details
+---
 
-Problem Type: Multi-class text classification
+## 🧪 Machine Learning Details
 
-Input: Symptom descriptions (text)
+- **Problem Type:** Multi-class text classification  
+- **Input:** Free-text symptom descriptions provided by users  
+- **Output:** Predicted disease label  
 
-Output: Predicted disease label
+### Model
+- **Algorithm:** Logistic Regression  
+- **Class Handling:** Class-balanced training to address data imbalance  
 
-Model: Logistic Regression (class-balanced)
+### Feature Engineering
+- TF-IDF vectorization  
+- Uni-gram and bi-gram feature extraction  
 
-Feature Extraction: TF-IDF with uni-grams and bi-grams
+### Text Preprocessing
+- Text cleaning (noise removal and formatting)  
+- Text normalization  
+- Symptom synonym handling to improve robustness and real-world accuracy  
 
-Text preprocessing and synonym normalization are applied to improve real-world prediction accuracy.
+---
 
-🌐 Web Application
+## 🌐 Web Application
 
-A simple and user-friendly Streamlit web interface allows users to:
+The project includes a clean, lightweight, and user-friendly **Streamlit-based web interface** that allows users to:
 
-Enter symptoms in plain English
+- Enter symptom descriptions in plain English  
+- Receive a predicted medical condition  
+- View the model’s confidence score  
+- Understand the ethical scope and limitations of the system  
 
-Receive a predicted condition
+This interface demonstrates how Machine Learning models can be effectively **integrated into real-world applications** for practical use and awareness.
 
-View prediction confidence
+---
 
-This interface demonstrates how ML models can be integrated into real applications.
+## ⚠️ Disclaimer
 
-⚠️ Disclaimer
+This system is developed **strictly for educational and health-awareness purposes**.  
+It **does not provide medical diagnosis or treatment recommendations**.
 
-This system is developed for educational and awareness purposes only.
-It does NOT provide medical diagnosis.
-Users should consult a qualified healthcare professional for medical advice.
+Users are strongly advised to consult a **qualified healthcare professional** for any medical concerns or decisions.
 
-🚀 How to Run the Project
-# Navigate to app directory
+---
+
+## 🚀 How to Run the Project
+
+```bash
+# Navigate to the application directory
 cd DonDew_HealthSense/app
 
-# Run Streamlit app
+# Run the Streamlit application
 streamlit run app.py
-
-📈 Future Improvements
-
-Top-3 disease predictions
-
-Multilingual support (Sinhala / Tamil)
-
-Online deployment (Streamlit Cloud)
-
-Improved symptom synonym coverage
-
-👤 Author
-
-Don Dew
-Machine Learning & Software Engineering Enthusiast
